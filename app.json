@@ -1,0 +1,19 @@
+{
+  "id": "8163bac5-aa8e-45be-9190-0e9ab3923d73",
+  "name": "Licensed Object View",
+  "publisher": "TheArche",
+  "version": "1.0.0.0",
+  "platform": "1.0.0.0",
+  "application": "1.0.0.0",
+  "idRanges": [
+    {
+      "from": 88888,
+      "to": 88890
+    }
+  ],
+  "runtime": "14.2",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
