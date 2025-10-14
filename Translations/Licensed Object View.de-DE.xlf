@@ -106,7 +106,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Licensed - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 297153950 - Field 1530012305 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Temp ID</source>
+          <source>Licensed</source>
           <target state="translated">Lizenziert</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Licensed - Property Caption</note>
@@ -130,7 +130,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Missing - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 297153950 - Field 3681931928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Temp ID</source>
+          <source>Missing</source>
           <target state="translated">Fehlend</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Missing - Property Caption</note>
@@ -218,6 +218,18 @@
           <target state="translated">Leseberechtigung</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field ReadPermission - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 297153950 - Field 3488712613 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the record is temporary.</source>
+          <target state="translated">Gibt an, ob der Datensatz temporär ist.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Temporary - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 297153950 - Field 3488712613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Temporary</source>
+          <target state="translated">Temporär</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table LicensedObject - Field Temporary - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2370213323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Licensed Objects</source>
@@ -350,6 +362,36 @@
           <target state="translated">Objektliste</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action AllObjects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2370213323 - Action 36190024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export</source>
+          <target state="translated">Exportieren</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action Export - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2370213323 - Action 2265367614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exports the current data to a CSV file for download.</source>
+          <target state="translated">Exportiert die aktuellen Daten in eine CSV-Datei zum Herunterladen.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action ExportCsv - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2370213323 - Action 2265367614 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export to CSV</source>
+          <target state="translated">Exportieren nach CSV</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action ExportCsv - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2370213323 - Action 101169219 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exports the current data to an HTML file for download.</source>
+          <target state="translated">Exportiert die aktuellen Daten in eine HTML-Datei zum Herunterladen.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action ExportHtml - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2370213323 - Action 101169219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export to HTML</source>
+          <target state="translated">Exportieren nach HTML</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action ExportHtml - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2370213323 - Action 2026913255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Refreshes the list of licensed objects.</source>
