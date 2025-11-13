@@ -204,6 +204,11 @@ table 88888 LicensedObject
 
     #region Permission
 
+    procedure GetObjectTypeEnum(ObjectTypeOption: Option): Enum ObjectType
+    begin
+        exit(Enum::ObjectType.FromInteger(OptionToEnum(ObjectTypeOption)));
+    end;
+
     local procedure ClearRec()
     begin
         Reset();
@@ -267,7 +272,7 @@ table 88888 LicensedObject
             if GuiAllowed() then
                 ProgressDialog.UpdateCopyCount();
             Init();
-            ObjectType := Enum::ObjectType.FromInteger(OptionToEnum(LicensePermission."Object Type"));
+            ObjectType := GetObjectTypeEnum(LicensePermission."Object Type");
             ObjectNumber := LicensePermission."Object Number";
             Transfer(LicensePermission);
             Insert(true);

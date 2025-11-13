@@ -338,10 +338,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page LicensedObjects - Action Refresh - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4035890834 - Action 2370213323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
+        <trans-unit id="PageExtension 4035890834 - Action 457488169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
           <source>Licensed Objects</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Action LicensedObjects - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Action GetLicensedObjects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4035890834 - Action 3792209913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
+          <source>View Licensed Objects (CSV)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Action InspectLicensedObjects - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4035890834 - Control 1158157243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
+          <source>Licensing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Control LicensingGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4035890834 - Control 1530012305 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
+          <source>Licensed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Control Licensed - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4766335 - EnumValue 1392872285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Codeunit</source>
