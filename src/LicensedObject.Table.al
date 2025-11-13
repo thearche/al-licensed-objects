@@ -252,7 +252,6 @@ table 88888 LicensedObject
     local procedure InsertPermissionByType(ObjectTypeValue: Integer; RangeMin: Integer; RangeMax: Integer)
     var
         LicensePermission: Record System.Security.AccessControl."License Permission";
-        ConfirmManagement: Codeunit System.Utilities."Confirm Management";
         ProgressDialog: Codeunit Microsoft.Utilities."Progress Dialog";
     begin
         LicensePermission.SetRange("Object Number", RangeMin, RangeMax);
@@ -261,9 +260,6 @@ table 88888 LicensedObject
             LicensePermission.SetRange("Execute Permission", LicensePermission."Execute Permission"::Yes)
         else
             LicensePermission.SetRange("Read Permission", LicensePermission."Read Permission"::Yes);
-
-        if not ConfirmManagement.GetResponse('') then
-            exit;
 
         if not LicensePermission.FindSet(false) then
             if GuiAllowed() then

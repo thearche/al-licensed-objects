@@ -417,12 +417,6 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Action InspectLicensedObjects - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4035890834 - Control 1158157243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
-          <source>Licensing</source>
-          <target state="translated">Lizenzierung</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Objects - Control LicensingGroup - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 4035890834 - Control 1530012305 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2172518989">
           <source>Licensed</source>
           <target state="translated">Lizenziert</target>

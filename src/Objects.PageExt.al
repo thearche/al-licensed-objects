@@ -6,18 +6,13 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
     {
         addlast(Content)
         {
-            group(LicensingGroup)
+            field(Licensed; this.IsLicensedObject())
             {
-                Caption = 'Licensing';
-                ShowCaption = false;
+                ApplicationArea = All;
+                Caption = 'Licensed';
+                Editable = false;
                 Visible = LicensingVisible;
-                field(Licensed; this.IsLicensedObject())
-                {
-                    ApplicationArea = All;
-                    Caption = 'Licensed';
-                    Editable = false;
-                    StyleExpr = PageStyleExpression;
-                }
+                StyleExpr = PageStyleExpression;
             }
         }
     }
@@ -29,11 +24,7 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
         }
         addfirst(Category_Report)
         {
-            group(Licensing_Promoted)
-            {
-                Visible = LicensingVisible;
-                actionref(InspectLicensedObjects_Promoted; InspectLicensedObjects) { }
-            }
+            actionref(InspectLicensedObjects_Promoted; InspectLicensedObjects) { }
         }
         addfirst(Navigation)
         {
@@ -56,7 +47,7 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
                 Caption = 'View Licensed Objects (CSV)';
                 Ellipsis = true;
                 Image = Payment;
-                Visible = false;
+                Visible = LicensingVisible;
                 trigger OnAction()
                 begin
                     this.InspectLicensedObjectsCSV();
