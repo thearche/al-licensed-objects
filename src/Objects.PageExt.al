@@ -11,7 +11,6 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
                 ApplicationArea = All;
                 Caption = 'Licensed';
                 Editable = false;
-                Visible = LicensingVisible;
                 StyleExpr = PageStyleExpression;
             }
         }
@@ -21,9 +20,6 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
         addfirst(Category_Process)
         {
             actionref(GetLicensedObjects_Promoted; GetLicensedObjects) { }
-        }
-        addfirst(Category_Report)
-        {
             actionref(InspectLicensedObjects_Promoted; InspectLicensedObjects) { }
         }
         addfirst(Navigation)
@@ -91,6 +87,7 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
     begin
         TempLicensedObject.CopyDataToTempTables(0, 50000, 99999);
         LicensingVisible := not TempLicensedObject.IsEmpty();
+        Rec.SetRange("Object ID", 50000, 99999);
         CurrPage.Update(false);
     end;
 
