@@ -92,11 +92,9 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
     end;
 
     local procedure IsLicensedObject(): Boolean
-    var
-        LicensedObjectRec: Record LicensedObject;
     begin
-        if LicensedObjectRec.Get(LicensedObjectRec.GetObjectTypeEnum(Rec."Object Type"), Rec."Object ID") then
-            exit(LicensedObjectRec.Licensed);
+        if TempLicensedObject.Get(TempLicensedObject.GetObjectTypeEnum(Rec."Object Type"), Rec."Object ID") then
+            exit(TempLicensedObject.Licensed);
     end;
 
     local procedure UpdateLicensePage()
