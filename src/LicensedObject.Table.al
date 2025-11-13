@@ -260,9 +260,10 @@ table 88888 LicensedObject
         else
             LicensePermission.SetRange("Read Permission", LicensePermission."Read Permission"::Yes);
 
-        repeat
-            InsertLicensePermissionByType(LicensePermission);
-        until LicensePermission.Next() = 0;
+        if LicensePermission.FindSet() then
+            repeat
+                InsertLicensePermissionByType(LicensePermission);
+            until LicensePermission.Next() = 0;
     end;
 
     local procedure MapPermission(PermissionOption: Option " ",Yes,Indirect) PermissionEnum: Enum System.Security.AccessControl.Permission
