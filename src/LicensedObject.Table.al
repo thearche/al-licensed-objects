@@ -252,7 +252,6 @@ table 88888 LicensedObject
     local procedure InsertPermissionByType(ObjectTypeValue: Integer; RangeMin: Integer; RangeMax: Integer)
     var
         LicensePermission: Record System.Security.AccessControl."License Permission";
-        ProgressDialog: Codeunit Microsoft.Utilities."Progress Dialog";
     begin
         LicensePermission.SetRange("Object Number", RangeMin, RangeMax);
         LicensePermission.SetRange("Object Type", EnumToOption(ObjectTypeValue));
@@ -261,17 +260,8 @@ table 88888 LicensedObject
         else
             LicensePermission.SetRange("Read Permission", LicensePermission."Read Permission"::Yes);
 
-        if not LicensePermission.FindSet(false) then
-            if GuiAllowed() then
-                ProgressDialog.OpenCopyCountMax(Format(LicensePermission."Object Type"), LicensePermission.Count());
         repeat
-            if GuiAllowed() then
-                ProgressDialog.UpdateCopyCount();
-            Init();
-            ObjectType := GetObjectTypeEnum(LicensePermission."Object Type");
-            ObjectNumber := LicensePermission."Object Number";
-            Transfer(LicensePermission);
-            Insert(true);
+            InsertLicensePermissionByType(LicensePermission);
         until LicensePermission.Next() = 0;
     end;
 
@@ -660,6 +650,15 @@ table 88888 LicensedObject
         if LicensedObjectRec.Licensed and LicensedObjectRec.Temporary then
             exit('temporary');
         exit('licensed');
+    end;
+
+    local procedure InsertLicensePermissionByType(LicensePermission: Record System.Security.AccessControl."License Permission")
+    begin
+        Init();
+        ObjectType := GetObjectTypeEnum(LicensePermission."Object Type");
+        ObjectNumber := LicensePermission."Object Number";
+        Transfer(LicensePermission);
+        Insert(true);
     end;
 
     local procedure SimpleFormatBooleanForHtml(Value: Boolean): Text
