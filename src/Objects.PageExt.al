@@ -4,7 +4,7 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
 {
     layout
     {
-        addlast(Content)
+        addlast(Control1102601000)
         {
             field(Licensed; this.IsLicensedObject())
             {
