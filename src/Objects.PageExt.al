@@ -25,7 +25,10 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
     {
         addfirst(Category_Process)
         {
-            actionref(GetLicensedObjects_Promoted; GetLicensedObjects) { }
+            actionref(GetLicensedObjects_Promoted; GetLicensedObjects)
+            {
+                Visible = true;
+            }
         }
         addfirst(Category_Report)
         {
