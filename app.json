@@ -15,5 +15,8 @@
   "features": [
     "NoImplicitWith",
     "TranslationFile"
-  ]
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true
+  }
 }
