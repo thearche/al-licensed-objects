@@ -25,10 +25,7 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
     {
         addfirst(Category_Process)
         {
-            actionref(GetLicensedObjects_Promoted; GetLicensedObjects)
-            {
-                Visible = true;
-            }
+            actionref(GetLicensedObjects_Promoted; GetLicensedObjects) { }
         }
         addfirst(Category_Report)
         {
@@ -45,7 +42,6 @@ pageextension 88888 Objects extends System.Reflection."All Objects with Caption"
                 ApplicationArea = All;
                 Caption = 'Licensed Objects';
                 Image = SetupPayment;
-                Visible = false;
                 trigger OnAction()
                 begin
                     this.InitTempLicensedObject();
